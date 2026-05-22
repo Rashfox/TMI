@@ -1,58 +1,287 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# TMI
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> A Laravel web application skeleton integrated with Vite and Tailwind CSS.
 
-## About Laravel
+![GitHub stars](https://img.shields.io/github/stars/Rashfox/TMI?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/Rashfox/TMI?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/Rashfox/TMI?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/Rashfox/TMI?style=for-the-badge&logo=github) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📑 Table of Contents
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [Description](#description)
+- [Key Features](#key-features)
+- [Use Cases](#use-cases)
+- [Tech Stack](#tech-stack)
+- [Quick Start](#quick-start)
+- [Environment Variables](#environment-variables)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Development Setup](#development-setup)
+- [Contributing](#contributing)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📝 Description
 
-## Learning Laravel
+TMI is a web application foundation built on the Laravel PHP framework. It provides a structured starting point for developing robust applications, utilizing a traditional Model-View-Controller backend alongside modern frontend asset management. The application features a pre-configured architecture including route management, database migration setups, and environment-driven configurations.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ✨ Key Features
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **🐘 Laravel Framework Foundation** — Utilizes the robust Laravel architecture featuring custom routing, dependency injection, and integrated database migration support.
+- **⚡ Vite and Tailwind Integration** — Employs Vite and Tailwind CSS for optimized frontend asset bundling and utility-first styling workflows.
+- **🗄️ Multi-Driver Database Configuration** — Supports multiple database, cache, and session drivers including Redis, Memcached, and relational SQL backends.
+- **✉️ Mail and Cloud Storage Ready** — Configured to integrate with standard SMTP/mail providers and AWS S3-compatible cloud storage systems.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## 🎯 Use Cases
 
-## Agentic Development
+- Developing a database-driven web application with a Laravel PHP backend and Tailwind CSS UI.
+- Bootstrapping a scalable SaaS application requiring built-in background queues, caching layers, and user session management.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 🛠️ Tech Stack
+
+- 🟨 **JavaScript**
+- ⬢ **Node.js**
+- 🐘 **PHP**
+- 🌬️ **Tailwind CSS**
+- ⚡ **Vite**
+
+**Notable libraries:** Laravel
+
+## ⚡ Quick Start
 
 ```bash
-composer require laravel/boost --dev
 
-php artisan boost:install
+# 1. Clone the repository
+git clone https://github.com/Rashfox/TMI.git
+
+# 2. Install dependencies
+npm install
+
+# 3. Configure environment
+cp .env.example .env   # then fill in the values
+
+# 4. Start the dev server
+npm run dev
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## 🔑 Environment Variables
 
-## Contributing
+The following environment variables are required (see `.env.example`):
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+APP_NAME=
+APP_ENV=
+APP_KEY=
+APP_DEBUG=
+APP_URL=
+APP_LOCALE=
+APP_FALLBACK_LOCALE=
+APP_FAKER_LOCALE=
+APP_MAINTENANCE_DRIVER=
+BCRYPT_ROUNDS=
+LOG_CHANNEL=
+LOG_STACK=
+LOG_DEPRECATIONS_CHANNEL=
+LOG_LEVEL=
+DB_CONNECTION=
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+SESSION_DRIVER=
+SESSION_LIFETIME=
+SESSION_ENCRYPT=
+SESSION_PATH=
+SESSION_DOMAIN=
+BROADCAST_CONNECTION=
+FILESYSTEM_DISK=
+QUEUE_CONNECTION=
+CACHE_STORE=
+MEMCACHED_HOST=
+REDIS_CLIENT=
+REDIS_HOST=
+REDIS_PASSWORD=
+REDIS_PORT=
+MAIL_MAILER=
+MAIL_SCHEME=
+MAIL_HOST=
+MAIL_PORT=
+MAIL_USERNAME=
+MAIL_PASSWORD=
+MAIL_FROM_ADDRESS=
+MAIL_FROM_NAME=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=
+VITE_APP_NAME=
+```
 
-## Code of Conduct
+## 🚀 Available Scripts
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **build** — `npm run build`
+- **dev** — `npm run dev`
 
-## Security Vulnerabilities
+## 📁 Project Structure
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+.
+├── .agents
+│   └── skills
+│       ├── laravel-best-practices
+│       │   ├── SKILL.md
+│       │   └── rules
+│       │       ├── advanced-queries.md
+│       │       ├── architecture.md
+│       │       ├── blade-views.md
+│       │       ├── caching.md
+│       │       ├── collections.md
+│       │       ├── config.md
+│       │       ├── db-performance.md
+│       │       ├── eloquent.md
+│       │       ├── error-handling.md
+│       │       ├── events-notifications.md
+│       │       ├── http-client.md
+│       │       ├── mail.md
+│       │       ├── migrations.md
+│       │       ├── queue-jobs.md
+│       │       ├── routing.md
+│       │       ├── scheduling.md
+│       │       ├── security.md
+│       │       ├── style.md
+│       │       ├── testing.md
+│       │       └── validation.md
+│       ├── pest-testing
+│       │   └── SKILL.md
+│       └── tailwindcss-development
+│           └── SKILL.md
+├── .env.example
+├── 127_0_0_1.sql
+├── app
+│   ├── Http
+│   │   └── Controllers
+│   │       ├── Auth
+│   │       │   ├── ConfirmPasswordController.php
+│   │       │   ├── ForgotPasswordController.php
+│   │       │   ├── LoginController.php
+│   │       │   ├── RegisterController.php
+│   │       │   ├── ResetPasswordController.php
+│   │       │   └── VerificationController.php
+│   │       ├── Controller.php
+│   │       ├── EventController.php
+│   │       ├── HomeController.php
+│   │       ├── LaporanController.php
+│   │       └── TiketController.php
+│   ├── Mail
+│   │   └── NotifikasiTiket.php
+│   ├── Models
+│   │   ├── Event.php
+│   │   ├── Tiket.php
+│   │   └── User.php
+│   └── Providers
+│       └── AppServiceProvider.php
+├── artisan
+├── boost.json
+├── bootstrap
+│   ├── app.php
+│   └── providers.php
+├── composer.json
+├── composer.lock
+├── config
+│   ├── adminlte copy.php
+│   ├── adminlte.php
+│   ├── app.php
+│   ├── auth.php
+│   ├── cache.php
+│   ├── database.php
+│   ├── filesystems.php
+│   ├── logging.php
+│   ├── mail.php
+│   ├── queue.php
+│   ├── services.php
+│   └── session.php
+├── database
+│   ├── factories
+│   │   └── UserFactory.php
+│   ├── migrations
+│   │   ├── 0001_01_01_000000_create_users_table.php
+│   │   ├── 0001_01_01_000001_create_cache_table.php
+│   │   ├── 0001_01_01_000002_create_jobs_table.php
+│   │   ├── 2026_05_22_040009_create_tikets_table.php
+│   │   └── 2026_05_22_041230_create_events_table.php
+│   └── seeders
+│       └── DatabaseSeeder.php
+├── package.json
+├── phpunit.xml
+├── public
+│   ├── favicon.ico
+│   ├── img
+│   │   └── posters
+│   │       └── poster-1779436275.jpg
+│   ├── index.php
+│   └── robots.txt
+├── resources
+│   ├── css
+│   │   └── app.css
+│   ├── js
+│   │   ├── app.js
+│   │   └── bootstrap.js
+│   ├── sass
+│   │   ├── _variables.scss
+│   │   └── app.scss
+│   └── views
+│       ├── admin
+│       │   └── dashboard.blade.php
+│       ├── auth
+│       │   ├── login.blade.php
+│       │   ├── passwords
+│       │   │   ├── confirm.blade.php
+│       │   │   ├── email.blade.php
+│       │   │   └── reset.blade.php
+│       │   ├── register.blade.php
+│       │   └── verify.blade.php
+│       ├── event
+│       │   ├── create.blade.php
+│       │   ├── edit.blade.php
+│       │   └── home.blade.php
+│       ├── laporan
+│       │   └── index.blade.php
+│       ├── tiket
+│       │   ├── create.blade.php
+│       │   ├── edit.blade.php
+│       │   ├── home.blade.php
+│       │   └── laporan_pdf.blade.php
+│       └── welcome.blade.php
+├── routes
+│   ├── console.php
+│   └── web.php
+├── tests
+│   ├── Feature
+│   │   └── ExampleTest.php
+│   ├── Pest.php
+│   ├── TestCase.php
+│   └── Unit
+│       └── ExampleTest.php
+└── vite.config.js
+```
 
-## License
+## 🛠️ Development Setup
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Node.js / JavaScript
+1. Install Node.js (v18+ recommended)
+2. Install dependencies: `npm install` (or `yarn` / `pnpm install` / `bun install`)
+3. Start the dev server: see the **Quick Start** above
+
+## 👥 Contributing
+
+Contributions are welcome! Here's the standard flow:
+
+1. **Fork** the repository
+2. **Clone** your fork: `git clone https://github.com/Rashfox/TMI.git`
+3. **Branch**: `git checkout -b feature/your-feature`
+4. **Commit**: `git commit -m 'feat: add some feature'`
+5. **Push**: `git push origin feature/your-feature`
+6. **Open** a pull request
+
+Please follow the existing code style and include tests for new behavior where applicable.
+
+---
+*This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
